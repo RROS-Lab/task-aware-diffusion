@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Research Paper Title</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome for icons (if needed) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <img src="images/usc-logo1.png" alt="USC Logo" class="logo" />
+        <h1 class="paper-title">Task-Context-Aware Diffusion Policy for Multi-task Disassembly with
+          Language Guidance</h1>
+        <div class="authors-container">
+            <div class="author">Jeon Ho Kang</div>
+            <div class="author">Sagar Joshi</div>
+            <div class="author">Neel Dhanaraj</div>
+            <div class="author">Satyandra K. Gupta</div>
+          </div>
+          <p class="institution">University of Southern California</p>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Resources Section -->
+      <section id="resources" class="section resources">
+        <h2 class="section-title">Resources</h2>
+        <div class="resource-cards">
+          <div class="resource-card paper">
+            <img src="images/Page_5.png" alt="Paper" />
+            <h3>Paper</h3>
+            <p>Coming Soon</p>
+          </div>
+          <div class="resource-card code">
+            <a href="https://github.com/JeonHoKang/DP_cable_disconnection">
+              <img src="images/github.png" alt="Code" />
+              <h3>Code</h3>
+            </a>
+          </div>
+          <div class="resource-card video">
+            <a href="https://www.youtube.com">
+              <img src="images/youtube-logo.png" alt="Video" />
+              <h3>Video</h3>
+              <p>Coming Soon</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Abstract Section -->
+      <section id="abstract" class="section abstract">
+        <h2 class="section-title">Abstract</h2>
+        <div class="abstract-content">
+          <p>
+            Diffusion models are powerful probabilistic generative models that have demonstrated remarkable success in image generation and, more recently, in robotic skill learning. They excel at learning multiple tasks and achieving high success rates across diverse manipulation scenarios. However, in manufacturing settings, success rate alone is insufficient for real-world deployment. Tasks must be executed efficiently, minimizing idle time while maintaining precision. Additionally, in assembly and disassembly settings, a single scene often contains multiple task goals that need to be completed—such as picking up an engine while simultaneously securing a suspension—requiring the robot to reason over multiple objectives within the same observation space. In human-robot collaboration, enabling humans to specify task preferences is crucial for flexible and intuitive interaction.
+          </p>
+          <p>
+            In this paper, we address two key challenges: (1) improving task execution efficiency by structuring tasks into distinct sub-task modes, and (2) enabling human operators to select tasks using natural language commands. Additionally, we introduce adaptive parameter selection framework and reliance on different sensory modalities depending on these sub-task modes. We evaluate our approach on the NIST Task Board, a representative benchmark where multiple task goals exist within the same scene. Our method improves execution speed by 57\% and show 16\% improvement in task success rates.
+          </p>
+        </div>
+      </section>
+      <section id="hardware-setup" class="section hardware-setup">
+        <h2 class="section-title">Hardware Setup</h2>
+        <div class="image-card">
+          <img src="images/hardware_setup (1).png" alt="Hardware Setup">
+        </div>
+      </section>
+      
+      <!-- System Architecture Section -->
+      <section id="system-architecture" class="section system-architecture">
+        <h2 class="section-title">System Architecture</h2>
+        <div class="image-card">
+          <img src="images/system_architecture.png" alt="System Architecture">
+        </div>
+      </section>
+      <section id="experiment-setup" class="section experiment-setup">
+        <h2 class="section-title">Experiment Setup</h2>
+        <div class="image-card">
+          <img src="images/connectors_fig.png" alt="experiment Setup">
+        </div>
+      </section>
+      <!-- Method Section -->
+      <section id="method" class="section method">
+        <h2 class="section-title">Our Method</h2>
+        <div class="video-grid">
+          <div class="video-card">
+            <video controls playsinline autoplay muted loop>
+              <source src="videos/D-sub.mp4" type="video/mp4" />
+            </video>
+            <p class="video-caption">D-Sub</p>
+          </div>
+          <div class="video-card">
+            <video controls playsinline autoplay muted loop>
+              <source src="videos/USB.mp4" type="video/mp4" />
+            </video>
+            <p class="video-caption">USB</p>
+          </div>
+          <div class="video-card">
+            <video controls playsinline autoplay muted loop>
+              <source src="videos/Terminal.mp4" type="video/mp4" />
+            </video>
+            <p class="video-caption">Terminal</p>
+          </div>
+          <div class="video-card">
+            <video controls playsinline autoplay muted loop>
+              <source src="videos/BNC.mp4" type="video/mp4" />
+            </video>
+            <p class="video-caption">BNC</p>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Results Section -->
+      <!-- Results Section -->
+      <section id="results" class="section results">
+        <h2 class="section-title">Results</h2>
+        <div class="results-container">
+          <div class="results-table-wrapper">
+            <table class="results-table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>D-Sub</th>
+                  <th>USB</th>
+                  <th>BNC</th>
+                  <th>Terminal</th>
+                  <th>Avg.</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>DP-S</td>
+                  <td>0.80</td>
+                  <td>0.75</td>
+                  <td>0.65</td>
+                  <td>0.80</td>
+                  <td>0.76</td>
+                </tr>
+                <tr>
+                  <td>DP-M</td>
+                  <td>1.00</td>
+                  <td>0.95</td>
+                  <td>0.70</td>
+                  <td>0.85</td>
+                  <td>0.88</td>
+                </tr>
+                <tr>
+                  <td><strong>DP-M-AM</strong></td>
+                  <td><strong>1.00</strong></td>
+                  <td><strong>1.00</strong></td>
+                  <td><strong>0.85</strong></td>
+                  <td><strong>0.95</strong></td>
+                  <td><strong>0.95</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="results-images">
+            <div class="image-card">
+              <img src="images/bar_chart_time.png" alt="Time Comparison" />
+              <p class="image-caption">A comparison between DP-S and DP-M-AM Methods of the average time taken to complete the task end to end</p>
+            </div>
+            <div class="image-card">
+              <img src="images/mode_change_comparison.png" alt="Mode Change" />
+              <p class="image-caption">A comparison between DP-S and DP-M-AM Methods of the average time taken for mode change within subtasks</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2023 Research Paper. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

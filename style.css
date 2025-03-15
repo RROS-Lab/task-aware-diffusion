@@ -1,0 +1,305 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap');
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  max-width: 80px;
+  margin-bottom: 10px;
+}
+.paper-title {
+  font-size: 2.5rem;
+}
+
+/* Navigation */
+.navbar {
+  background: #f5f5f5;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #ddd;
+}
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+.nav-menu li {
+  margin: 0 15px;
+}
+.nav-menu li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+}
+.nav-menu li a:hover {
+  text-decoration: underline;
+}
+
+/* Section Base Styles */
+.section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+}
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* Authors Inline Below Title */
+.authors-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust spacing */
+  margin-top: 10px;
+}
+
+.author {
+  background: rgba(255, 255, 255, 0.2); /* Light transparent background */
+  padding: 8px 15px;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff; /* Change text color to white */
+  border: 1px solid rgba(255, 255, 255, 0.4); /* Light border */
+}
+
+
+/* Institution Below Authors */
+.institution {
+  text-align: center;
+  font-style: italic;
+  color: #777;
+  margin-top: 5px;
+}
+
+/* Resources Section - Smaller Cards */
+.resource-cards {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Reduced spacing */
+  flex-wrap: wrap;
+  max-width: 800px; /* Limits overall width */
+  margin: 0 auto; /* Center the section */
+}
+
+.resource-card {
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  transition: box-shadow 0.3s;
+  max-width: 150px; /* Keeps uniform width */
+  margin: auto;
+}
+
+/* Adjust image sizes for consistency */
+.resource-card img {
+  max-width: 80px; /* Increase for Code & Video */
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 5px;
+}
+
+/* Make Paper image proportional */
+.resource-card.paper img {
+  max-width: 100px;
+  height: 120px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+/* Ensure Code and Video icons match proportionally */
+.resource-card.code img,
+.resource-card.video img {
+  max-width: 90px; /* Slightly smaller than Paper */
+  height: 90px; /* Ensures balance */
+}
+
+
+.resource-card h3 {
+  font-size: 1rem; /* Reduce font size */
+  margin-bottom: 3px;
+  color: #333;
+}
+
+.resource-card p {
+  font-size: 0.8rem; /* Smaller text */
+  color: #555;
+}
+
+
+
+/* Abstract Section */
+.abstract-content {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+/* Video Grid */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.video-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+.video-card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.video-card video {
+  width: 100%;
+  display: block;
+}
+.video-caption {
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+  background: #f5f5f5;
+}
+
+/* Results Section */
+.results-container {
+  display: grid;
+  gap: 40px;
+}
+.results-table-wrapper {
+  overflow-x: auto;
+}
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.results-table th,
+.results-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+.results-table th {
+  background: #f5f5f5;
+  font-weight: 700;
+}
+.results-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.image-card {
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  transition: box-shadow 0.3s;
+}
+.image-card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.image-card img {
+  width: 80%; /* Adjusts the width to be smaller */
+  max-width: 600px; /* Prevents images from being too large */
+  height: auto; /* Maintains aspect ratio */
+  display: block;
+  margin: 0 auto; /* Centers the image */
+  border-radius: 5px; /* Slight rounded corners for aesthetics */
+}
+
+/* Further Reduce Hardware and Architecture Images */
+.hardware-setup .image-card img,
+.system-architecture .image-card img {
+  width: 60%; /* Further reduces size */
+  max-width: 500px; /* Limits excessive width */
+}
+
+/* Experiment Setup Image (if needed) */
+.experiment-setup .image-card img {
+  width: 70%;
+  max-width: 550px;
+}
+.image-caption {
+  font-weight: 600;
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+/* Video Grid - 2x2 Layout */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Ensures 2 columns */
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+  background: #fff;
+}
+
+.video-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-card video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* Maintains proper video aspect ratio */
+  display: block;
+}
+
+.video-caption {
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+  background: #f5f5f5;
+}
