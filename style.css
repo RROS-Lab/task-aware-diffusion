@@ -246,10 +246,17 @@ body {
 }
 
 /* Further Reduce Hardware and Architecture Images */
-.hardware-setup .image-card img,
-.system-architecture .image-card img {
+.hardware-setup .image-card img{
   width: 60%; /* Further reduces size */
   max-width: 500px; /* Limits excessive width */
+}
+/* Increase size for system architecture image */
+.system-architecture .image-card img {
+  width: 100%; /* Make it take the full width of its container */
+  max-width: 1200px; /* Increase max width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any inline spacing */
+  margin: 0 auto; /* Center the image */
 }
 
 /* Experiment Setup Image (if needed) */
